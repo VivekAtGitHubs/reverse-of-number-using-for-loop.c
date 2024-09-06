@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main() 
+{
+    int i,n,rev=0;
+    printf("\n enter number to find reverse ");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+        rev=(rev*10)+n%10;
+        n=n/10;
+    }
+    printf("\n reverse=%d",rev);
+     return 0;
+}
